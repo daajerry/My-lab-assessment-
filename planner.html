@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner — Jeremiah Da'a</title>
+  <meta name="description" content="Interactive academic task manager for tracking coursework and research milestones." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">jeremiah<span>.da'a</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" aria-current="page">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero scan-bg" style="padding-block: clamp(2.5rem, 6vw, 4rem);">
+      <div class="container">
+        <p class="eyebrow">Academic Planner</p>
+        <h1 style="font-size:clamp(1.8rem, 4vw, 2.6rem);">Track coursework and deadlines</h1>
+        <p class="hero-lede">Add a task, set its priority and due date, then mark it complete or remove it as your term progresses.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="planner-layout">
+
+          <!-- Add task form -->
+          <aside class="card">
+            <h2 style="font-size:1.15rem;">Add a task</h2>
+            <form id="taskForm" class="planner-form" novalidate>
+              <div class="field">
+                <label for="taskName">Task name</label>
+                <input type="text" id="taskName" name="taskName" placeholder="e.g. Finish threat report" autocomplete="off" />
+                <span class="field-error" id="taskNameError"></span>
+              </div>
+              <div class="field">
+                <label for="taskPriority">Priority level</label>
+                <select id="taskPriority" name="taskPriority">
+                  <option value="low">Low</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="high">High</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="taskDue">Due date</label>
+                <input type="date" id="taskDue" name="taskDue" />
+              </div>
+              <button type="submit" class="btn btn-primary">Add Task</button>
+            </form>
+          </aside>
+
+          <!-- Task dashboard -->
+          <div>
+            <div class="planner-stats">
+              <div class="mini-stat">
+                <span class="num" id="statTotal">0</span>
+                <span class="label">Total Tasks</span>
+              </div>
+              <div class="mini-stat">
+                <span class="num" id="statCompleted">0</span>
+                <span class="label">Completed</span>
+              </div>
+              <div class="mini-stat">
+                <span class="num" id="statProgress">0%</span>
+                <span class="label">Progress</span>
+              </div>
+            </div>
+
+            <div class="progress-track">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <ul class="task-list" id="taskList"></ul>
+            <div class="empty-state" id="emptyState" style="display:none;">
+              No tasks yet — add one using the form to get started.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <span class="brand">jeremiah<span>.da'a</span></span>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-fine">© 2026 Jeremiah Da'a · j.daa0483@miva.edu.ng · Built for COS 106</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
