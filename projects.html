@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Jeremiah Da'a</title>
+  <meta name="description" content="Selected cybersecurity and software projects by Jeremiah Da'a." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">jeremiah<span>.da'a</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero scan-bg" style="padding-block: clamp(2.5rem, 6vw, 4rem);">
+      <div class="container">
+        <p class="eyebrow">Portfolio</p>
+        <h1 style="font-size:clamp(1.8rem, 4vw, 2.6rem);">Selected projects</h1>
+        <p class="hero-lede">Simulated builds exploring network defense, secure credential handling, and academic productivity tooling.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-3">
+
+          <!-- Project 1 -->
+          <article class="card project-card">
+            <div class="project-thumb">
+              <img src="image.jpg" alt="Preview screenshot of the Network Intrusion Detection System interface" />
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Network Security</span>
+              <h3>Network Intrusion Detection System</h3>
+              <p>A lightweight tool that analyzes network traffic logs for anomalous patterns and flags suspicious activity in real time.</p>
+              <ul class="project-feats">
+                <li>Packet log parsing and normalization</li>
+                <li>Rule-based anomaly detection engine</li>
+                <li>Live alert dashboard with severity tags</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary" aria-disabled="true">View Project</a>
+                <a href="#" class="btn btn-outline" aria-disabled="true">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card">
+            <div class="project-thumb">
+              <img src="image.jpg" alt="Preview screenshot of the Academic Planner and Tracker interface" />
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Productivity</span>
+              <h3>Academic Planner &amp; Tracker</h3>
+              <p>A JavaScript-driven task manager built to streamline coursework and research milestones — the same engine powering the Planner page on this site.</p>
+              <ul class="project-feats">
+                <li>Add, complete, and delete tasks dynamically</li>
+                <li>Priority levels and due-date tracking</li>
+                <li>Live progress statistics with no page reloads</li>
+              </ul>
+              <div class="project-actions">
+                <a href="planner.html" class="btn btn-primary">View Project</a>
+                <a href="#" class="btn btn-outline" aria-disabled="true">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card">
+            <div class="project-thumb">
+              <img src="image.jpg" alt="Preview screenshot of the Secure Password Manager and Audit Tool interface" />
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Applied Cryptography</span>
+              <h3>Secure Password Manager &amp; Audit Tool</h3>
+              <p>A client-side encryption simulator showcasing secure credential storage practices and password-strength auditing.</p>
+              <ul class="project-feats">
+                <li>Simulated client-side encryption workflow</li>
+                <li>Password strength scoring and audit report</li>
+                <li>Vault-style organized credential view</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary" aria-disabled="true">View Project</a>
+                <a href="#" class="btn btn-outline" aria-disabled="true">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <span class="brand">jeremiah<span>.da'a</span></span>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-fine">© 2026 Jeremiah Da'a · j.daa0483@miva.edu.ng · Built for COS 106</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
