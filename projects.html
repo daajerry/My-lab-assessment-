@@ -9,8 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projects — Jeremiah Da'a" />
+  <meta property="og:description" content="Selected cybersecurity and software projects by Jeremiah Da'a." />
+  <meta property="og:image" content="image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
 </head>
 <body>
+  <div class="scroll-progress" id="scrollProgress"></div>
 
   <header class="site-header">
     <div class="container nav">
@@ -42,7 +49,7 @@
         <div class="grid-3">
 
           <!-- Project 1 -->
-          <article class="card project-card">
+          <article class="card project-card reveal">
             <div class="project-thumb">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Network%20based%20intrusion%20detection%20system.png" alt="Diagram illustrating how a network-based intrusion detection system monitors traffic" loading="lazy" />
             </div>
@@ -63,7 +70,7 @@
           </article>
 
           <!-- Project 2 -->
-          <article class="card project-card">
+          <article class="card project-card reveal">
             <div class="project-thumb">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Simple-kanban-board-.jpg" alt="A kanban-style task board with cards organized into progress columns" loading="lazy" />
             </div>
@@ -84,7 +91,7 @@
           </article>
 
           <!-- Project 3 -->
-          <article class="card project-card">
+          <article class="card project-card reveal">
             <div class="project-thumb">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cybersecurity.png" alt="Conceptual graphic representing digital security and encrypted data" loading="lazy" />
             </div>
@@ -101,6 +108,35 @@
                 <a href="#" class="btn btn-primary" aria-disabled="true">View Project</a>
                 <a href="#" class="btn btn-outline" aria-disabled="true">GitHub Repo</a>
               </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <span class="brand">jeremiah<span>.da'a</span></span>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-fine">© 2026 Jeremiah Da'a · j.daa0483@miva.edu.ng · Built for COS 106</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" type="button">&uarr;</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
             </div>
           </article>
 
