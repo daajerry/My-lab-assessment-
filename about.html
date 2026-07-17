@@ -9,8 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About — Jeremiah Da'a" />
+  <meta property="og:description" content="Education, career aspirations, technical skills, and interests of Jeremiah Da'a." />
+  <meta property="og:image" content="image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
 </head>
 <body>
+  <div class="scroll-progress" id="scrollProgress"></div>
 
   <header class="site-header">
     <div class="container nav">
@@ -44,7 +51,7 @@
           <p class="eyebrow">Educational Background</p>
           <h2>Academic timeline</h2>
         </div>
-        <div class="edu-table-wrap">
+        <div class="edu-table-wrap reveal">
           <table class="edu-table">
             <caption>A record of institutions, credentials, and current standing</caption>
             <thead>
@@ -87,7 +94,7 @@
           <p class="eyebrow">Career Aspirations</p>
           <h2>Why I'm doing this</h2>
         </div>
-        <div class="aspiration">
+        <div class="aspiration reveal">
           <p>
             My goal is to build a successful career in cybersecurity while making
             a positive impact on the lives of the community by protecting their
@@ -101,6 +108,86 @@
     </section>
 
     <!-- ================= SKILLS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>Where I'm building depth</h2>
+        </div>
+        <div class="card reveal">
+          <div class="skill-item">
+            <div class="skill-top"><span>Networking</span><span>72%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:72%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Linux</span><span>68%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:68%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Python</span><span>60%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:60%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Digital Forensics</span><span>45%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:45%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Threat Intelligence</span><span>55%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:55%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOBBIES ================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Hobbies &amp; Interests</p>
+          <h2>Outside the classroom</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card hobby-card reveal">
+            <div class="hobby-icon">TB</div>
+            <h3>Reading Tech Blogs</h3>
+            <p>Following security researchers and engineering teams to stay current on emerging threats and defenses.</p>
+          </div>
+          <div class="card hobby-card reveal">
+            <div class="hobby-icon">PL</div>
+            <h3>Politics &amp; Policy</h3>
+            <p>Interested in how governance and digital policy shape privacy rights and national cybersecurity strategy.</p>
+          </div>
+          <div class="card hobby-card reveal">
+            <div class="hobby-icon">TL</div>
+            <h3>Exploring New Tools</h3>
+            <p>Testing security utilities, scripting small automations, and learning by breaking things safely.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <span class="brand">jeremiah<span>.da'a</span></span>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-fine">© 2026 Jeremiah Da'a · j.daa0483@miva.edu.ng · Built for COS 106</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" type="button">&uarr;</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
     <section class="section">
       <div class="container">
         <div class="section-head">
